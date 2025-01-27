@@ -12,3 +12,22 @@ function isAnagram(str1, str2) {
 }
 
 module.exports = isAnagram;
+
+
+// answer
+
+function sort(str){
+  var  array= str.split(",");
+  var combine=array.join("");
+  return combine
+}
+function anagram(str1,str2){
+  if (sort(str1) == sort(str2)){
+    return true;
+  }
+  else{
+    return false;
+  }
+}
+var aa =anagram("ganesh","ganesh")
+console.log(aa);
